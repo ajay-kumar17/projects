@@ -1,0 +1,76 @@
+/* Poore page ka setup */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #667eea 0%,
+    #764ba2 100%
+  ); /* Cool Gradient */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Quote container ka look */
+.quote-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.quote-container:hover {
+  transform: translateY(-5px); /* Chota sa hover effect */
+}
+
+/* Quote text style */
+.quote-pera {
+  font-size: 1.4rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  min-height: 80px; /* Text badalne par layout hilega nahi */
+}
+
+/* Author name style */
+.author {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.author::before {
+  content: "— "; /* Author ke naam ke aage dash */
+}
+
+/* Button ki styling */
+#btn {
+  background-color: #764ba2;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition:
+    background 0.3s,
+    box-shadow 0.3s;
+}
+
+#btn:hover {
+  background-color: #5a3782;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#btn:active {
+  transform: scale(0.98); /* Click karne par dabne wala effect */
+}

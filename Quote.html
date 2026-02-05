@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="quote.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="quote-container">
+      <p class="quote-pera">quote loading.....</p>
+      <h3 class="author"></h3>
+      <button id="btn">Get New Quote</button>
+    </div>
+    <script>
+      let quoteText = document.querySelector(".quote-pera");
+      let authorName = document.querySelector(".author");
+      let btn = document.querySelector("#btn");
+
+      async function getQuote() {
+        quoteText.innerText = "Thinking...";
+        authorName.innerText = "";
+        try {
+          let response = await fetch("https://dummyjson.com/quotes/random");
+
+          if (!response.ok) {
+            throw new Error("Quote nahi mil pai");
+          }
+
+          const data = await response.json();
+          quoteText.innerText = `"${data.quote}"`;
+          authorName.innerText = `${data.author}`;
+          console.log(data);
+        } catch (error) {
+          quoteText.innerText = "oops! something went wrong";
+          console.log("error fatching quite:", error);
+        }
+      }
+      btn.addEventListener("click", () => {
+        getQuote();
+      });
+    </script>
+  </body>
+</html>
