@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #4203a9, #90bafc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.calcuator {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+h1 span {
+    color: #ffff76;
+}
+
+.input-box {
+    margin: 40px 0;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+input {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+}
+
+/* Calendar icon ko style karne ke liye */
+input::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.5);
+    width: 25px;
+    height: 25px;
+}
+
+button {
+    background: #ffff76;
+    color: #333;
+    padding: 15px 30px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #fff;
+    transform: scale(1.05);
+}
+
+#result {
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+#result span {
+    color: #ffff76;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
