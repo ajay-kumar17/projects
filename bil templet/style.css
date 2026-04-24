@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 50px auto;
+}
+header h1 {
+  font-size: 26px;
+  margin-top: 3px;
+}
+header a {
+  font-weight: 900;
+  text-decoration: none;
+}
+.header-container {
+  padding: 30px, 30px;
+  width: 60%;
+  border: 4px solid #0f4f87;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-bottom: -55px;
+  gap: 5px;
+  justify-content: space-between;
+}
+.header-container img {
+  width: 140px;
+}
+main {
+  margin-top: 10px;
+}
+main .section1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.first-table {
+  width: 60.25%;
+  border-collapse: collapse;
+  border: 2px solid #ccc;
+}
+.first-row-flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+  align-items: center;
+}
+.second-row-flex {
+  display: flex;
+  justify-content: space-around;
+}
+.third-row div span {
+  font-weight: 900;
+}
+.third-row {
+  margin: 10px;
+  flex-direction: column;
+}
+.section2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+.section2 table {
+  width: 60.32%;
+
+  border-collapse: collapse;
+  border-spacing: 5px;
+  border: 2px solid #ccc;
+}
+.section2 table p {
+  font-weight: 800;
+  font-size: 13px;
+}
+.section2 table span {
+  font-size: 13px;
+}
+.section2 table td {
+  padding: 10px;
+}
+.section2 table img {
+  width: 40%;
+}
+#rrr {
+  text-align: center;
+  vertical-align: middle;
+}
+.section2 table tr td {
+  padding-right: 20px;
+}
+.section3 table th {
+  background-color: #1f6fb2;
+  color: white;
+}
+.section3 table {
+  border: 2px solid #ccc;
+  border-collapse: collapse;
+  width: 60.32%;
+  padding: 20px;
+}
+
+.section3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+}
+.section3 table span {
+  font-weight: 700;
+}
+.section3 table tr,
+th,
+td {
+  padding: 5px;
+}
+.section4 {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin: 8px auto;
+  border: 2px solid #ccc;
+  width: 60.6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.section4 nav {
+  display: flex;
+  align-items: center;
+  padding-right: 19px;
+
+  width: 100%;
+
+  /* border: 2px solid #ccc; */
+  background-color: #1f6fb2;
+  color: white;
+}
+.section4 div {
+  padding: 8px;
+  margin: auto;
+  width: fit-content;
+
+  /* border: 2px solid #ccc; */
+}
+.section4 p {
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.section5 {
+  display: flex;
+  width: 60.6%;
+  border-top: 2px solid#ccc;
+  border-bottom: 3.5px dotted#ccc;
+  border-left: 2px solid#ccc;
+  border-right: 2px solid#ccc;
+  /* margin: auto; */
+  margin-bottom: 5px;
+  height: 14px;
+}
+
+.footdiv {
+  display: flex;
+
+  margin: 2px auto;
+  border: 2px solid #ccc;
+  width: 60.63%;
+  margin-bottom: 3px;
+}
+.footdiv table {
+  width: 100%;
+}
+.footdiv table th,
+table td {
+  padding: 6px 7px;
+}
